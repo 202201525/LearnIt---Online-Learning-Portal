@@ -15,7 +15,7 @@ import './Styles/EditQuiz.css';
 import axios from 'axios';
 import Footer from './Footer';
 import Header from './Header';
-const ENDPOINT = process.env.BACKEND_URL || "http://localhost:8000";
+const ENDPOINT = process.env.BACKEND_URL || "https://learnit-online-learning-portal.onrender.com";
 
 const EditQuiz = () => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const EditQuiz = () => {
   useEffect(() => {
     const fetchQuizDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/instructor/quiz/details/${id}`);
+        const response = await axios.get(`https://learnit-online-learning-portal.onrender.com/instructor/quiz/details/${id}`);
         const { quizTitle, passingScore, questions } = response.data;
         console.log(response.data);
         setQuizDetails({ quizTitle, passingScore, questions });
@@ -83,7 +83,7 @@ const EditQuiz = () => {
     }
 
     try {
-      await axios.put(`http://localhost:8000/instructor/quiz/update/${id}`, quizDetails);
+      await axios.put(`https://learnit-online-learning-portal.onrender.com/instructor/quiz/update/${id}`, quizDetails);
       alert('Quiz updated successfully!');
       navigate('/instructor-dashboard');
     } catch (err) {

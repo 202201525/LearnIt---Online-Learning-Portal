@@ -4,7 +4,7 @@ import { Divider } from '@mui/material';
 import { Person, AccessTime } from '@mui/icons-material'; // Import MUI icons
 import './Styles/CoursesCatalog.css';
 
-const ENDPOINT= process.env.BACKEND_URL ||  "http://localhost:8000";
+const ENDPOINT= process.env.BACKEND_URL ||  "https://learnit-online-learning-portal.onrender.com";
 
 
 function CourseCatalog() {

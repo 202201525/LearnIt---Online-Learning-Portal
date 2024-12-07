@@ -19,7 +19,7 @@ import Header2 from "./HeaderAfterSignIn";
 import Footer from "./Footer";
 
 
-const ENDPOINT = process.env.BACKEND_URL || "http://localhost:8000";
+const ENDPOINT = process.env.BACKEND_URL || "https://learnit-online-learning-portal.onrender.com";
 
 const EditCourse = ({ courseData }) => {
   const { id } = useParams();

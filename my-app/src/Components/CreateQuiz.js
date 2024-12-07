@@ -14,7 +14,7 @@ import { NavigateBefore } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import './Styles/CreateQuiz.css';
 
-const ENDPOINT = process.env.BACKEND_URL || "http://localhost:8000";
+const ENDPOINT = process.env.BACKEND_URL || "https://learnit-online-learning-portal.onrender.com";
 
 const CreateQuiz = () => {
   const navigate = useNavigate();

@@ -93,7 +93,7 @@ const CreateCourse = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:8000/media/upload', {
+      const response = await fetch('https://learnit-online-learning-portal.onrender.com/media/upload', {
         method: 'POST',
         body: formData,
       });
@@ -117,7 +117,7 @@ const CreateCourse = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:8000/media/upload', {
+      const response = await fetch('https://learnit-online-learning-portal.onrender.com/media/upload', {
         method: 'POST',
         body: formData,
       });
@@ -218,7 +218,7 @@ const CreateCourse = () => {
 
     try {
       console.log(courseData);
-      const response = await fetch('http://localhost:8000/instructor/course/add', {
+      const response = await fetch('https://learnit-online-learning-portal.onrender.com/instructor/course/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -7,7 +7,7 @@ import CreateCourse from "./CreateCourse";
 import CreateQuiz from "./CreateQuiz";
 
 
-const ENDPOINT= process.env.BACKEND_URL ||  "http://localhost:8000";
+const ENDPOINT= process.env.BACKEND_URL ||  "https://learnit-online-learning-portal.onrender.com";
 
 
 
@@ -52,7 +52,7 @@ const InstructorDashboard = () => {
     const fetchAllQuizzes = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/instructor/quiz/getallquizzes/${userInfo._id}`
+          `https://learnit-online-learning-portal.onrender.com/instructor/quiz/getallquizzes/${userInfo._id}`
         );
         console.log(response.data.data);
         setQuizzesData(response.data.data); // Update quizzes data state

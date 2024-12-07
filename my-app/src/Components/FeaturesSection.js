@@ -3,7 +3,7 @@ import './Styles/FeaturesSection.css';
 import { People, LibraryBooks, School, LaptopMac } from '@mui/icons-material'; // Import MUI icons
 
 
-const ENDPOINT= process.env.BACKEND_URL ||  "http://localhost:8000";
+const ENDPOINT= process.env.BACKEND_URL ||  "https://learnit-online-learning-portal.onrender.com";
 
 const features = [
   {

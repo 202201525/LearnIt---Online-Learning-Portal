@@ -6,7 +6,7 @@ import Header from "./Header";
 import Header2 from "./HeaderAfterSignIn";
 import Footer from "./Footer";
 
-const ENDPOINT= process.env.BACKEND_URL ||  "http://localhost:8000";
+const ENDPOINT= process.env.BACKEND_URL ||  "https://learnit-online-learning-portal.onrender.com";
 
 function BuyNow() {
   const { id } = useParams();
@@ -23,7 +23,7 @@ function BuyNow() {
   const handleBuyNow = () => {
     const buy = async () => {
       try {
-        // const response = await fetch(`http://localhost:8000/student/course/buy`,{},{});
+        // const response = await fetch(`https://learnit-online-learning-portal.onrender.com/student/course/buy`,{},{});
 
         const response = await fetch(
           `${ENDPOINT}/student/course/buy`,

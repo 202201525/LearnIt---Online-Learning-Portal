@@ -14,7 +14,7 @@ import img from "../Assets/profile-img.jpeg";
 
 
 
-const ENDPOINT= process.env.BACKEND_URL ||  "http://localhost:8000";
+const ENDPOINT= process.env.BACKEND_URL ||  "https://learnit-online-learning-portal.onrender.com";
 
 
 const Profile = () => {

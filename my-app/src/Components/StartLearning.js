@@ -7,7 +7,7 @@ import Header from "./Header";
 import Header2 from "./HeaderAfterSignIn";
 import Footer from "./Footer";
 import FeedbackPage from "./FeedbackPage";
-const ENDPOINT = process.env.BACKEND_URL || "http://localhost:8000";
+const ENDPOINT = process.env.BACKEND_URL || "https://learnit-online-learning-portal.onrender.com";
 
 const students = [
   {

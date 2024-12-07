@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 // Wrapper for overall container with margin
 
 
-const ENDPOINT= process.env.BACKEND_URL ||  "http://localhost:8000";
+const ENDPOINT= process.env.BACKEND_URL ||  "https://learnit-online-learning-portal.onrender.com";
 
 
 const Wrapper = styled('div')({

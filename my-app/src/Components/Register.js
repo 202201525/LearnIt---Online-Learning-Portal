@@ -5,7 +5,7 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 import './Styles/Register.css';
 
 
-const ENDPOINT = process.env.BACKEND_URL || "http://localhost:8000";
+const ENDPOINT = process.env.BACKEND_URL || "https://learnit-online-learning-portal.onrender.com";
 
 function Register({ onClose, onLogin }) {
   const [role, setRole] = useState('Student'); // Default role

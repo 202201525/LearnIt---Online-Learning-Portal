@@ -10,7 +10,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Header2 from "./HeaderAfterSignIn";
 import Footer from "./Footer"
 import axios from "axios";
-const ENDPOINT = process.env.BACKEND_URL || "http://localhost:8000";
+const ENDPOINT = process.env.BACKEND_URL || "https://learnit-online-learning-portal.onrender.com";
 
 
 function CoursePage() {
@@ -78,7 +78,7 @@ function CoursePage() {
   useEffect(() => {
     // const fetchQuizDetails = async () => {
     //   try {
-    //     const response = await axios.get(`http://localhost:8000/student/course/quiz/${id}`);
+    //     const response = await axios.get(`https://learnit-online-learning-portal.onrender.com/student/course/quiz/${id}`);
     //     const { quizTitle, passingScore, questions } = response.data;
     //     console.log(response.data);
     //     setQuizDetails({ quizTitle, passingScore, questions });
